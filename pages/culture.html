@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture - Tribal Heritage Timeline</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    html, body {
+        height: 100%; /* Ensure the page takes up the full height of the viewport */
+        margin: 0;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main {
+        flex: 1; /* Allow the main content to grow and push the footer down */
+    }
+    
+    footer {
+        background-color: #343a40; /* Match your dark theme */
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    /* Force the images to have the same height */
+    .accordion-body img {
+        height: 300px; /* Set a fixed height */
+        object-fit: cover; /* Maintain aspect ratio while covering the area */
+        width: 100%; /* Ensure the image stretches to fit the width */
+    }
+    </style>
+    
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="../index.html">Tribal Heritage Timeline</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artifacts.html">Artifacts</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5">
+        <h1 class="text-center mb-4">Cultural Practices</h1>
+        <p class="text-center mb-4">Explore the rich and vibrant cultural practices of our tribal communities, including traditional festivals, rituals, and crafts.</p>
+        
+        <div class="accordion" id="cultureAccordion">
+            <!-- Traditional Festivals -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Traditional Festivals
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#cultureAccordion">
+                    <div class="accordion-body">
+                        <p>Traditional festivals are an integral part of the community's identity. These celebrations include:</p>
+                        <ul>
+                            <li>**Harvest Festival**: A joyous occasion to give thanks for a bountiful harvest.</li>
+                            <li>**Rain Dance Ceremony**: A ritual to invoke blessings for rain during the dry season.</li>
+                        </ul>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaNGuGekII_lg0xJrRvpRVDBmioZwSa0mZ9A&s" class="img-fluid rounded mt-3" alt="Traditional Festivals">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Craftsmanship -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Craftsmanship and Arts
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#cultureAccordion">
+                    <div class="accordion-body">
+                        <p>The community's craftsmanship reflects their deep connection to nature:</p>
+                        <ul>
+                            <li>**Weaving**: Creating intricate patterns using traditional looms.</li>
+                            <li>**Pottery**: Handcrafted pots and jars, each telling a unique story.</li>
+                        </ul>
+                        <img src="https://xudevcomblog.wordpress.com/wp-content/uploads/2017/10/dsc_0480.jpg?w=768" class="img-fluid rounded mt-3" alt="Craftsmanship">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spiritual Rituals -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Spiritual Rituals
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#cultureAccordion">
+                    <div class="accordion-body">
+                        <p>Spiritual rituals play a significant role in connecting with ancestors and the divine. Key rituals include:</p>
+                        <ul>
+                            <li>**Ancestral Worship**: Honoring ancestors through offerings and prayers.</li>
+                            <li>**Healing Ceremonies**: Led by spiritual healers to restore balance and health.</li>
+                        </ul>
+                        <img src="https://iamtravelinglight.com/wp-content/uploads/2013/03/bai-inatlawan-of-the-bukidnon-tribe-preparing-the-offerings-for-the-pamuhat-ritual-kaamulan-festival-malaybalay-bukidnon-mindanao-philippines.jpg" class="img-fluid rounded mt-3" alt="Spiritual Rituals">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2024 Tribal Heritage Timeline | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
