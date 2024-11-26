@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifacts - Tribal Heritage Timeline</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+html, body {
+    height: 100%; /* Ensure the page takes up the full height of the viewport */
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Allow the main content to grow and push the footer down */
+}
+
+footer {
+    background-color: #343a40; /* Match your dark theme */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Adjust the carousel height to 40% of the viewport height */
+.carousel-inner {
+    height: 70vh;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    height: 100%; /* Make sure the image occupies the full height of the carousel */
+}
+
+.carousel-caption {
+    bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+.carousel-description {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin-top: 20px;
+}
+</style>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand" href="../index.html">Tribal Heritage Timeline</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="artifacts.html">Artifacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5">
+        <h1 class="text-center mb-4">Artifacts Gallery</h1>
+        <div id="artifactCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://buksu.edu.ph/wp-content/uploads/2020/10/IMG_9607.jpg" class="d-block w-100" alt="Artifact 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Artifact 1</h5>
+                        <p>Description of Artifact 1.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://3.bp.blogspot.com/-GrsMyirekZY/UfYikA8-3rI/AAAAAAAAA3g/o2B3Q5659qI/s1600/_DSC0084.JPG" class="d-block w-100" alt="Artifact 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Artifact 2</h5>
+                        <p>Description of Artifact 2.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#artifactCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#artifactCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Additional Descriptions Below Carousel -->
+        <div class="carousel-description">
+            <h3>More About the Artifacts</h3>
+            <p>This collection showcases the rich heritage of the tribal communities, featuring artifacts that have been preserved for centuries. These objects offer a glimpse into the cultural and historical significance of the tribe’s way of life.</p>
+            <p>Each artifact holds a story of its own, representing the values, traditions, and craftsmanship that have been passed down through generations. The items displayed here have been carefully curated to highlight the diverse aspects of the tribe’s history.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2024 Tribal Heritage Timeline | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
