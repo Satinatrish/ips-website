@@ -8,23 +8,28 @@ document.addEventListener("DOMContentLoaded", function () {
     // Clear existing cards (if any)
     cardsContainer.innerHTML = "";
 
-    // Generate cards dynamically
-    storedData.forEach((content, index) => {
-        const card = document.createElement("div");
-        card.className = "col-md-4 card";
+    // Check if there's data to display
+    if (storedData.length === 0) {
+        cardsContainer.innerHTML = `<p class="text-center">No data available to display.</p>`;
+    } else {
+        // Generate cards dynamically
+        storedData.forEach((content, index) => {
+            const card = document.createElement("div");
+            card.className = "col-md-4 card";
 
-        card.innerHTML = `
-            <div class="card-body">
-                <img src="${content.image}" class="card-img-top" alt="${content.title}" style="max-height: 200px; object-fit: cover;">
-                <h5 class="card-title">${content.title}</h5>
-                <p class="card-text"><strong>Date:</strong> ${content.date}</p>
-                <p class="card-text"><strong>Festival:</strong> ${content.festival}</p>
-                <p class="card-text">${content.description}</p>
-            </div>
-        `;
+            card.innerHTML = `
+                <div class="card-body">
+                    <img src="${content.image}" class="card-img-top" alt="${content.title}" style="max-height: 200px; object-fit: cover;">
+                    <h5 class="card-title">${content.title}</h5>
+                    <p class="card-text"><strong>Date:</strong> ${content.date}</p>
+                    <p class="card-text"><strong>Festival:</strong> ${content.festival}</p>
+                    <p class="card-text">${content.description}</p>
+                </div>
+            `;
 
-        cardsContainer.appendChild(card);
-    });
+            cardsContainer.appendChild(card);
+        });
+    }
 
     // Search Bar functionality
     const searchBar = document.getElementById("search-bar");
@@ -37,20 +42,24 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
         cardsContainer.innerHTML = "";
-        filteredData.forEach((content, index) => {
-            const card = document.createElement("div");
-            card.className = "col-md-4 card";
-            card.innerHTML = `
-                <div class="card-body">
-                    <img src="${content.image}" class="card-img-top" alt="${content.title}" style="max-height: 200px; object-fit: cover;">
-                    <h5 class="card-title">${content.title}</h5>
-                    <p class="card-text"><strong>Date:</strong> ${content.date}</p>
-                    <p class="card-text"><strong>Festival:</strong> ${content.festival}</p>
-                    <p class="card-text">${content.description}</p>
-                </div>
-            `;
-            cardsContainer.appendChild(card);
-        });
+
+        if (filteredData.length === 0) {
+            cardsContainer.innerHTML = `<p class="text-center">No results found.</p>`;
+        } else {
+            filteredData.forEach((content, index) => {
+                const card = document.createElement("div");
+                card.className = "col-md-4 card";
+                card.innerHTML = `
+                    <div class="card-body">
+                        <img src="${content.image}" class="card-img-top" alt="${content.title}" style="max-height: 200px; object-fit: cover;">
+                        <h5 class="card-title">${content.title}</h5>
+                        <p class="card-text"><strong>Date:</strong> ${content.date}</p>
+                        <p class="card-text"><strong>Festival:</strong> ${content.festival}</p>
+                        <p class="card-text">${content.description}</p>
+                    </div>
+                `;
+                cardsContainer.appendChild(card);
+            });
+        }
     });
 });
-
