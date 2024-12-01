@@ -28,6 +28,12 @@ footer {
     text-align: center;
     padding: 10px;
 }
+.card-img-top {
+    
+    height: 300px;
+    object-fit: cover; /* Ensures images fit within the height and crop if needed */
+}
+
 </style>
 <body>
     <!-- Header -->
@@ -53,7 +59,7 @@ footer {
     <!-- Main Content -->
     <main class="container mt-5">
         <div class="search-bar mb-3">
-            <input id="search-bar" type="text" class="form-control" placeholder="Search stations...">
+            <input id="search-bar" type="text" class="form-control" placeholder="Search timeline...">
         </div>
 
         <div id="cards-container" class="row">
