@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p><strong>Date:</strong> ${item.date}</p>
                         <p><strong>Festival:</strong> ${item.festival}</p>
                         <p><strong>Description:</strong> ${item.description}</p>
-                        <button class="btn btn-primary" data-id="${item.id}" data-bs-toggle="modal" data-bs-target="#viewModal">View Details</button>
                     </div>
                 </div>
             `;
