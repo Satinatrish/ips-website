@@ -19,10 +19,26 @@ document.addEventListener("DOMContentLoaded", () => {
             festival: "Festival 2",
             description: "Description of Event 2",
             image: "path/to/image2.jpg"
+        },
+        {
+            id: 3,
+            title: "Event 3",
+            date: "2025-03-01",
+            festival: "Festival 3",
+            description: "Description of Event 3",
+            image: "path/to/image3.jpg"
+        },
+        {
+            id: 4,
+            title: "Event 4",
+            date: "2025-04-01",
+            festival: "Festival 4",
+            description: "Description of Event 4",
+            image: "path/to/image4.jpg"
         }
     ];
 
-    // Retrieve or initialize localStorage data
+    // Retrieve localStorage data or default to an empty array if none exists
     const storedData = JSON.parse(localStorage.getItem("timelineData")) || [];
 
     // Combine hardcoded sample data and localStorage data
@@ -30,12 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Save combined data to localStorage if not already present
     if (!localStorage.getItem("timelineData")) {
-        localStorage.setItem("timelineData", JSON.stringify(storedData));
+        localStorage.setItem("timelineData", JSON.stringify(combinedData));
     }
 
-    // Function to sort data by date
+    // Function to sort data by date (newest first)
     function sortByDate(data) {
-        return data.sort((a, b) => new Date(a.date) - new Date(b.date));
+        return data.sort((a, b) => new Date(b.date) - new Date(a.date)); // Newest first
     }
 
     // Display data as cards
