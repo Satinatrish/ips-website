@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Panungdan (Pamada), Pamahandi Daw Singapo",
             date: "April 4, 2024",
             festival: "Kaamulan Festival",
-            description: "A traditional Bukidnon ritual with food offerings.",
+            description: "A Traditional Bukidnon ritual with food offerings.",
             image: "https://i.ytimg.com/vi/kC48dTW5HLg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLABCJpJ1VZAjrJ1YCgv1Ehlc6N_YA"
         },
         {
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Banog-Banog Story & Cultural Show",
             date: "April 28, 2024",
             festival: "Banog-Banog Festival",
-            description: "A cultural show and a street dancing parade based on the Banog-Banog story.",
+            description: "A Cultural show and a Street dancing parade based on the Banog-Banog story.",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdLLQJ1FBsr3lWLYIAyej-Wdl6DaIpTt46kg&s"
         },
         {
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Ritual, Short Program",
             date: "August 17, 2024",
             festival: "Anlaw Ta Palaopao",
-            description: "A ritual and short program to start the festivities.",
+            description: "A Ritual and short program to start the festivities.",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdLLQJ1FBsr3lWLYIAyej-Wdl6DaIpTt46kg&s"
         },
         {
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Closing Ritual",
             date: "October 25, 2024",
             festival: "INDIGENOUS PEOPLES MONTH CELEBRATION",
-            description: "Description of Event 2",
+            description: "A closing ritual marking the end of the celebration.",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRAdzy3tQ5xWI-38wLm3OkbnTsH_lqTrYR-Q&s"
         },
         {
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
             image: "https://www.shutterstock.com/editorial/image-editorial/M3T8A1yaN5j0g819NDg5OTg=/filipinos-men-indigenous-manobo-tribe-compete-pestle-440nw-10189028f.jpg"
         },
         {
-            id: 19,
+            id: 18,
             title: "Traditional Tribal Cooking",
             date: "October 25, 2024",
             festival: "INDIGENOUS PEOPLES MONTH CELEBRATION ",
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXSko1BW430tyrPp9LYb3CzSnIFJudvjrs8Q&s"
         },
         {
-            id: 20,
+            id: 19,
             title: "Ritual / Pangampo",
             date: "October 20, 2024",
             festival: "Anlaw Ta Dalirig",
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM6rkR_3tcc0n0HvsonWmK-zftfq_9Nos6Cg&s"
         },
         {
-            id: 21,
+            id: 20,
             title: "IP Night Presentation: Dugso, Dasang",
             date: "October 22, 2024",
             festival: "Anlaw Ta Dalirig",
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
             image: "https://scontent.fmnl40-1.fna.fbcdn.net/v/t39.30808-6/464306582_1234451671170997_33135297150126334_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHbrrSdh7cW8MCnSAdkU_Ha2GI332dATHDYYjffZ0BMcMDaGZjG79dybU0SeEvPUQRT0eeLPPWJZ9-9uLlj4QR1&_nc_ohc=TcNaYfR9i80Q7kNvgEz-u3t&_nc_zt=23&_nc_ht=scontent.fmnl40-1.fna&_nc_gid=AiklNdAbEWdKJ5G75UT17Zl&oh=00_AYCPReZKNh69n1CgimtkG0lkmwl1xtCb6MHlAJyvE7Exxg&oe=674D9853"
         },
         {
-            id: 22,
+            id: 21,
             title: "Tribal Games",
             date: "October 25, 2024",
             festival: "Anlaw Ta Dalirig",
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXFz6_2skSh0ox1FLI9kVf6q7UQJCtDERzw&s"
         },
         {
-            id: 23,
+            id: 22,
             title: "Pan-aha hu Madagway ha Inay",
             date: "October 25, 2024",
             festival: "Anlaw Ta Dalirig",
@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
             image: "https://scontent.fmnl40-2.fna.fbcdn.net/v/t39.30808-6/464732349_8498862160169387_9180681720804477359_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEuUn6QBVl8X2YYa1OBE3cSXgcxZ9_V4MFeBzFn39XgwZZeWw-NjtTu_I83R9Msy7UQzPUb3fFkUSqjL4qIPeG-&_nc_ohc=lJNEvQUAS6kQ7kNvgHstSdm&_nc_zt=23&_nc_ht=scontent.fmnl40-2.fna&_nc_gid=AmxfZ41iE-HtWDWylDuuTt3&oh=00_AYDBOgaO4s0KzzPmVoU68csNcKmwDARN_nr7ZBPXLS9odg&oe=674D928D"
         },
         {
-            id: 24,
+            id: 23,
             title: "Laga Daw Malaki ta NBSC",
             date: "October 31, 2024",
             festival: "IP Month Celebration at NBSC",
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
             image: "https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-6/468220576_9162745273738527_5535992715861911786_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEivq9HIdj_yst9M0pbPgTkm6kTjYiDKPabqRONiIMo9iIPyjD1VAynl-6Knwm1t34ihKDCG6jm5D5ULbi5m07c&_nc_ohc=0AkI-gW-7HAQ7kNvgHjd0Kg&_nc_zt=23&_nc_ht=scontent.fcgy2-2.fna&_nc_gid=A61B0xfftc1Qcwc4n8e40lu&oh=00_AYBm-eSa7szwEuFSq4UjtMRdMggmNroswC3iKck25VaiOA&oe=674D912A"
         },
         {
-            id: 25,
+            id: 24,
             title: "IP Congress",
             date: "October 21, 2024",
             festival: "IP Month Celebration",
