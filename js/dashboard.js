@@ -128,6 +128,25 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 16,
             title: "Closing Ritual",
             date: "2025-02-01",
+            festival: "Festival 2",
+            description: "Description of Event 2",
+            image: "path/to/image2.jpg"
+        },
+        {
+            id: 3,
+            title: "Event 3",
+            date: "2025-03-01",
+            festival: "Festival 3",
+            description: "Description of Event 3",
+            image: "path/to/image3.jpg"
+        },
+        {
+            id: 4,
+            title: "Event 4",
+            date: "2025-04-01",
+            festival: "Festival 4",
+            description: "Description of Event 4",
+            image: "path/to/image4.jpg"
             festival: "October 25, 2024",
             description: "A closing ritual marking the end of the celebration.",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRAdzy3tQ5xWI-38wLm3OkbnTsH_lqTrYR-Q&s"
@@ -195,11 +214,12 @@ document.addEventListener("DOMContentLoaded", () => {
             festival: "IP Month Celebration",
             description: "A congress to discuss the issues and concerns of Indigenous Peoples.",
             image: "https://buksu.edu.ph/wp-content/uploads/2024/03/DSC06367-1024x683.jpg"
+
         }
         
     ];
 
-    // Retrieve or initialize localStorage data
+    // Retrieve localStorage data or default to an empty array if none exists
     const storedData = JSON.parse(localStorage.getItem("timelineData")) || [];
 
     // Combine hardcoded sample data and localStorage data
@@ -207,12 +227,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Save combined data to localStorage if not already present
     if (!localStorage.getItem("timelineData")) {
-        localStorage.setItem("timelineData", JSON.stringify(storedData));
+        localStorage.setItem("timelineData", JSON.stringify(combinedData));
     }
 
-    // Function to sort data by date
+    // Function to sort data by date (newest first)
     function sortByDate(data) {
-        return data.sort((a, b) => new Date(a.date) - new Date(b.date));
+        return data.sort((a, b) => new Date(b.date) - new Date(a.date)); // Newest first
     }
 
     // Display data as cards
@@ -230,7 +250,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p><strong>Date:</strong> ${item.date}</p>
                         <p><strong>Festival:</strong> ${item.festival}</p>
                         <p><strong>Description:</strong> ${item.description}</p>
-                        <button class="btn btn-primary" data-id="${item.id}" data-bs-toggle="modal" data-bs-target="#viewModal">View Details</button>
                     </div>
                 </div>
             `;
