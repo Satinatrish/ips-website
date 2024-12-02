@@ -1,9 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const cardsContainer = document.getElementById("cards-container");
+    // Encapsulation: Wrapping functionality within the DOMContentLoaded event listener
+    // ensures that the code runs only after the DOM is fully loaded.
+
+    const cardsContainer = document.getElementById("cards-container");// Encapsulation: Accessing DOM elements.
     const searchBar = document.getElementById("search-bar");
 
     // Hardcoded sample data
     const sampleData = [
+        // Abstraction: Each object in the array represents an event, hiding complex details
+        // of individual properties behind a simple data structure.
         {
             id: 1,
             title: "Ethnic Sports",
@@ -199,6 +204,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
     ];
+      // Polymorphism: The `localStorage` API can handle multiple data types (string, object, array) 
+    // and adapt them for storage and retrieval.
 
     // Retrieve localStorage data or default to an empty array if none exists
     const storedData = JSON.parse(localStorage.getItem("timelineData")) || [];
@@ -207,13 +214,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const combinedData = [...sampleData, ...storedData];
 
     // Save combined data to localStorage if not already present
+     // Encapsulation: Saving data to localStorage only if not already present
     if (!localStorage.getItem("timelineData")) {
-        localStorage.setItem("timelineData", JSON.stringify(combinedData));
+        localStorage.setItem("timelineData", JSON.stringify(combinedData));// Abstraction: Managing data persistence.
     }
 
     // Function to sort data by date (newest first)
+      // Method (Behavior): A function that sorts data by date
+    // Example of Encapsulation: This function performs a specific task (sorting).
     function sortByDate(data) {
-        return data.sort((a, b) => new Date(b.date) - new Date(a.date)); // Newest first
+        return data.sort((a, b) => new Date(b.date) - new Date(a.date));// Polymorphism: The Date object handles diverse date formats. 
+                                                                      
     }
 
     // Display data as cards
