@@ -127,28 +127,9 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             id: 16,
             title: "Closing Ritual",
-            date: "2025-02-01",
-            festival: "Festival 2",
+            date: "October 25, 2024",
+            festival: "INDIGENOUS PEOPLES MONTH CELEBRATION",
             description: "Description of Event 2",
-            image: "path/to/image2.jpg"
-        },
-        {
-            id: 3,
-            title: "Event 3",
-            date: "2025-03-01",
-            festival: "Festival 3",
-            description: "Description of Event 3",
-            image: "path/to/image3.jpg"
-        },
-        {
-            id: 4,
-            title: "Event 4",
-            date: "2025-04-01",
-            festival: "Festival 4",
-            description: "Description of Event 4",
-            image: "path/to/image4.jpg"
-            festival: "October 25, 2024",
-            description: "A closing ritual marking the end of the celebration.",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRAdzy3tQ5xWI-38wLm3OkbnTsH_lqTrYR-Q&s"
         },
         {
